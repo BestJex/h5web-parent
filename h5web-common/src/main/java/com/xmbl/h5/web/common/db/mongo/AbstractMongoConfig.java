@@ -12,6 +12,12 @@ import com.mongodb.ServerAddress;
 
 import lombok.Data;
  
+/**
+ * @author  noseparte
+ * @date  2019/9/9 11:27
+ * @Description
+ * 			<p>simpleMongoDBFactory</p>
+ */
 @Data
 public abstract class AbstractMongoConfig {
 	private String host, database, username, password;
