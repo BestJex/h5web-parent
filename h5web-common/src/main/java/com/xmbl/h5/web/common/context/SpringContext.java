@@ -8,6 +8,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * @author  noseparte
+ * @date  2019/9/9 11:25
+ * @Description
+ * 		<p>ApplicationContext</p>
+ * 		<p>Spring IOC 获取上下文</p>
+ */
 public abstract class SpringContext {
 	protected final Logger log = LoggerFactory.getLogger(getClass());
 
