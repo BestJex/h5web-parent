@@ -1,0 +1,144 @@
+syntax = "proto2";
+
+option java_package = "com.xmbl.h5.web.game.proto";
+option java_outer_classname = "StageTree";
+
+import "MsgObject.proto";
+import "PbPlayerEntity.proto";
+
+//关卡详细信息
+message PbTGStageTree
+{
+	//--关卡集参数
+	required PbTGStageTree_Param	Param		=  1;	
+	
+	//--关卡布置
+	repeated PbTGStageNode	Nodes				=  2;		//关卡节点
+	
+	//--作者信息
+	optional PbPlayer  	 	Author		  		=  3;		//作者
+}
+
+message PbTGStageTree_Param
+{
+	required int64			TreeId		  		=  1;	    //关卡树ID
+	//--发布设置	
+	optional string  		Name          		=  2;		//关卡树名称
+	optional string   		TextureUrl    		=  3;		//关卡树封面
+	optional string   		Dec    		  		=  4;		//关卡树描述
+	optional string         VoiceUrl	  		=  5;		//声音标示
+	optional int32			VoiceTime	  		=  6;		//声音长度
+	//--基础设置	
+	optional int32          MaxEnergy	  		=  7;		//最大体力上限
+	optional int32          PreStageCostEnergy	=  8;		//每关消耗体力
+	optional int32          EnergyRecoveryInterval	=	9;	//每点体力回复时间
+	optional int32 			ShareGetEnergy		=  10;		//每日分享获得体力
+	optional int32			BuyEnergyCost		=  11;		//体力单价
+	optional int32			BuyEnergyCostType	=  12;		//购买体力消耗类型
+	//--限制条件
+	optional int32			StoryType			=  13;		//关卡集模式
+	optional bool 			IsConditionLimit	=  14[default = true];	//是否条件限制
+	optional int32			ConditionType		=  15;		//条件限制类型 0:步数   1：时间
+	optional int32			ConditionValue		=  16;		//条件限制数值
+	optional bool 			IsElementLimit1		=  17[default = false];	//是否限制元素1
+	optional bool 			IsElementLimit2		=  18[default = false];	//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  19;
+	repeated PbTaskTarget	BLimitTargets1		=  20;
+	repeated PbTaskTarget	ALimitTargets2		=  21;
+	repeated PbTaskTarget	BLimitTargets2		=  22;
+	//--道具设置
+	optional int32			PropGetType			=  23;		//道具获取方式： 0 ：付费获取   1：免费赠送
+	optional bool 			IsUsePropLimit		=  24;		//每回合是否限制使用次数 true 限制 false 不限制			
+	repeated PbPropData 	Props		  	    =  25;		//道具类型
+	optional bool 			IsEnergyRecoveryInterval  =  26;		//是否允许回复体力	
+	optional bool 			IsShareGetEnergy  	=  27;		//是否允许分享获得体力
+	
+	//--隐藏属性
+	optional int64			HeadNodeId			=	28[default = 1];		// 头结点id
+	optional bool 			IsSubmit	  		=   29;		//是否上传过
+	optional bool 			IsPraise			=   30;		//是否点赞过
+	
+	//--
+	optional bool           IsCanCreateBattle   =   31; 	//是否可以用来开比赛
+	optional int32			Praise				=	32;		//点赞数
+	optional int32 			OpenCount			=	33;		//打开次数
+	
+}
+
+message PbTGStageTree_Info
+{
+	required int64 			Id			  		=  1;		//关卡树ID
+	optional string   		Name          		=  2;		//关卡树名称
+	optional int32    		StoryType     		=  3;		//关卡树模式
+	optional string   		TextureUrl    		=  4;		//封面标示
+	optional PbPlayer		Author		  		=  5;		//作者
+	optional bool 			IsSubmit	  		=  6;		//是否上传过
+	optional bool 			IsPraise			=  7;		//是否点赞过
+	optional int32			MaxEnergy			=  8;		//最大体力
+	optional int32			CurEnergy			=  9;		//当前体力
+	optional bool			IsEnergyRecoveryInterval = 10;	//是否允许回复体力
+	optional int32			EnergyRecoveryInterval = 11;	//恢复间隔
+	optional bool 			IsCanCreateBattle	=	12;		//是否允许开比赛
+	optional int32			Praise				=	13;		//点赞数量
+	optional int32			OpenCount			=	14;		//打开次数
+}
+
+
+//关卡节点信息
+message PbTGStageNode
+{
+	required int64			NodeId				=	1;		//关卡节点ID	
+	optional int32			NodeType			=	2;		//关卡类型 0：普通关卡  1： 关卡包
+	optional int32			PathType			=	3;		//路径类型 0：主线  1：支线
+	optional int32          PreStageCostEnergy	=   4;		//每关消耗体力
+	optional string 		NodeName			=	5;		//关卡包名称
+	optional int32			OpenType			=	6;		//开放方式 0：初始开放   1：顺序开放
+	optional int32   		PassCondition		= 	7;		//通关条件
+	repeated PbTGStagePanel	StagePanels			=	8;		//节点组
+	optional int64			PriorId				=	9;		//上一个节点ID
+	optional int64			Nextd				=	10;		//下一个节点ID
+	optional int64			BranchId			=	11;		//支线ID
+	optional int32			IsNew				=	12;		//节点新标识 panel 中有一个新状态， node 节点就有新状态  ；状态标识 int型 方便扩展 暂时为是否为新的标识   0 ：无标识    1：新标识 
+	optional int32			Index				=	13;		//索引
+}
+
+//关卡面板信息
+message PbTGStagePanel
+{
+	optional int32			Index				=	1;
+	optional int64			StageId				=	2;
+	optional int32			StageType			=	3;
+	optional string 		StageTexurl			=	4;
+	optional string 		StageName			=	5;
+	optional string 		AuthorName			=	6;
+	optional int64			AuthorId			=	7;
+	optional string 		AuthorAvatar		=	8;
+	optional string 		PlotName			=	9;
+	optional string 		PlotTexurl			=	10;
+	optional int64			PlotId				= 	11;
+	optional int32			Difficulty			=	12;
+	optional string 		Tag					=	13;
+	optional bool			SingelModel	  		=  	14;
+	optional int32			IsNew				=	15;		//状态标识 int型 方便扩展 暂时为是否为新的标识   0 ：无标识    1：新标识 
+}
+
+
+//角色信息
+message PbPlayerInfo
+{
+	required int64 Id = 1;
+	optional int32 ServerId = 2;
+	optional string Name = 3;
+	optional string Avatar = 4;
+}
+
+
+
+
+//玩家地理位置
+message PbGeographPos
+{
+	required    string      City             = 1;       // 所在城市
+	required    float       X                = 2;       // X坐标
+	required    float       Y                = 3;       // Y坐标
+}

@@ -1,0 +1,541 @@
+syntax = "proto2";
+
+option java_package = "com.xmbl.h5.web.game.proto";
+option java_outer_classname = "MsgObject";
+
+import "PbPlayerEntity.proto";
+
+//关卡标签信息
+message PbTGStageLable
+{
+	required string   		Name          =  1;   //标签的名字
+	required int32			CurCount	  =  2;	  //当前拥有
+	required int32			MaxCount	  =  3;	  //最大拥有
+	repeated string 		TexUrls		  =  4;	  //前4张封面
+}
+
+//关卡简易信息
+message PbTGStageInfo
+{
+	required int64    		StageId       		=  1;	  //关卡的id
+	required string   		Name          		=  2;	  //关卡的名称
+	required int32			StageVictoryType	=  3;	  //关卡类型
+	required bool    		SingelModel	  		=  4;	  //关卡模式
+	required int32			WinType				=  5;	  //胜利条件示意图0.无、1.传染、2.毛毛虫、3.经典
+	optional bool 			IsSubmit			=  6;	  //是否上传过挑战商店
+	optional bool           IsOfficial			=  7;	  //是否是官方关卡
+	optional bool           IsTimeLimit			=  8;	  //是否限时关卡
+	optional int32   		Downloads	  		=  9;	  //下载量
+	optional string   		TextureUrl    		=  10;	  //封面标示
+	optional int32			RuleType			=  11;	  //游戏规则 消除 收集
+	optional PbPlayer       Author				=  12;	  //作者
+	optional bool  			IsFromPkShop		=  13;
+	optional bool 			IsSubmitShop	 	=  14;    //是否勾选了上传挑战商店
+	optional bool 			IsSubmitPKShop	 	=  15;    //是否勾选了上传PK商店
+	optional bool 			IsSubmitedShop		=  16;	  //是否已经上传到挑战商店
+	optional bool    	  	IsSubmitedPkShop	=  17;	  //是否已经上传到PK商店
+	optional bool			IsMatchCondition    =  18;	  //符合条件
+	optional int32 			Like				=  19;	  //点赞
+	optional int32 			OpenCount			=  20;	  //打开次数
+	optional int32			PassRate			=  21;    //通关率
+	optional int32			PlayState 			=  22;    //过关状态,0没玩过1通关2玩过没通关
+	optional int32 			PermitCreateCompetition	= 23;	//允许其他玩家点赞收藏后开启竞技比赛
+}
+
+//关卡详细信息
+message PbTGStage
+{
+	required int64    		StageId       		=  1;	   //关卡ID
+	required int32    		StageVictoryType    =  2;      //胜利方式 0 ：得分高获胜   1： 完成目标多获胜
+	required string   		Name          		=  3; 	   //关卡名称
+	required string   		Dec           		=  4;	   //关卡描述
+	required int32    		Step          		=  5;	   //关卡步数
+	required int64    		Time          		=  6;	   //单回合时间
+	required int32    		ColorNum      		=  7;	   //棋盘颜色数量(废弃)
+	required int32    		FishNum       		=  8;      //鱼数量
+	required int32    		LinkNum       		=  9;      //连击数量
+	required bool     		IsAddTarget   		=  10;     //消除对方目标快是否增加对方数量
+	repeated PbTaskTarget   Targets1      		=  11;     //目标1
+	repeated PbTaskTarget   Targets2      		=  12;     //目标2
+	repeated PbBlock  		Blocks        		=  13;     //块
+	repeated PbDropBlock 	DropBlocks    		=  14;     //掉落块
+	repeated int32          ItemIds       		=  15;     //物品Id
+	repeated int32          ItemNums      		=  16;     //物品数量
+	required int32			PropNum		  		=  17;	   //道具数量
+	optional bool			SingelModel	  		=  18[default = false];  // 是否为单人模式
+	repeated PbPropChest    PropChests    		=  19;     //道具宝箱
+	optional bool			DropModel	  		=  20[default = false];  // 掉落模式
+	repeated PbRollTarget   ARollTargets    	=  21;	 //滚动目标;
+	repeated PbRollTarget   BRollTargets    	=  22;	 //滚动目标;
+	repeated PbRollTarget   AutoRollTargets 	=  23;	 //自动滚动目标;
+	optional bool 			RollVictory	    	=  24;	 //滚动目标设为胜利目标
+	optional bool			CanCreateFish		=  25[default = true];   //战斗中是否可以生成鱼(鸟/风车)
+	repeated PbCaterpillar  Caterpillars		=  26;	//棋盘上的毛毛虫
+	optional bool 			IsUsePropInBag		=  27;	//道具是否从玩家背包扣除
+	optional bool			IsAddInfectJudge	=  28[default = false]; //是否加入传染模式判断。判断内容为一方没有传染色块时，提前结束战斗。
+	repeated int32			SetColorNumElement  =  29;	//选中棋盘颜色值
+	optional bool			IsChangeedDropStage =  30;	//记录是否修改过掉落
+	optional bool			IsTimeLimit 		=  31[default = false];	//是否为限时关卡
+	optional int32			TimeLimitLength 	=  32[default = 0];	//限时关卡的倒计时时长
+	optional int32			RuleType			=  33[default = 0]; //游戏规则 消除 收集
+	optional PbPlayer   	Author    	  		=  34;		//作者
+	optional string   		TextureUrl    		=  35;		//封面标示
+	optional int32    		MoneyType     		=  36;		//货币类型
+	optional int32    		Cost     	  		=  37;		//货币类型
+	optional string         VoiceUrl	  		=  38;		//声音标示
+	optional int32			VoiceTime	  		=  39;		//声音长度
+	repeated PbItemMotif    ItemMotifs			=  43;		//元素块主题列表
+	optional bool			IsDefaultMotif		=  44[default = true]; //是否使用默认主题
+	optional bool           IsOfficial			=  45[default = false];//是否是官方关卡
+	optional bool 			IsCanUseProp		=  46[default = false];//是否允许使用道具
+	repeated PbPropData 	Props		  	  	=  47;	//道具类型
+	optional int32 			StoryType			=  48;  //所属关卡集的模式
+	optional int64 			ChallenageId		=  49;	//挑战ID
+	optional string         ChallenageKey		=  50;	//挑战名称
+	optional bool 			IsSubmitShop	 	=  51;  //是否勾选了上传挑战商店
+	optional bool 			IsSubmitPKShop	 	=  52;  //是否勾选了上传PK商店
+	optional bool 			IsStepLimit			=  53[default = true];	//是否限制回合
+	optional bool 			IsConditionLimit	=  54[default = true];	//是否条件限制
+	optional bool 			IsElementLimit1		=  55[default = false];	//是否限制元素1
+	optional bool 			IsElementLimit2		=  56[default = false];	//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  57;
+	repeated PbTaskTarget	BLimitTargets1		=  58;
+	repeated PbTaskTarget	ALimitTargets2		=  59;
+	repeated PbTaskTarget	BLimitTargets2		=  60;
+	optional bool			IsSyncCollectTarget	=  61[default = false]; //是否直接收集任务目标
+	repeated int32			DropModels			=  62;	//掉落模式   0 随机掉落  1 顺序掉落
+	optional bool			IsLimitUsePropCount	=  63[default = true];	//道具使用限制
+	optional int64			MotifGroupId		=  64;	//主题组ID
+	optional string 		MotifGroupName		=  65;	//主题组名称
+	repeated PbBelts		Belts				=  66;	//传送带数据
+	optional int32 			PermitCreateCompetition		=  67;	//允许其他玩家点赞收藏后开启竞技比赛
+	repeated PbMagicHat    	MagicHats    		=  68;     //魔术帽
+	optional int32    		PermitCreateStory   =  69[default = 1];     //收藏后允许作为关卡集的关卡
+	repeated PbHidden  		Hiddens				=  70;	//棋盘上的隐藏块
+}
+
+//挑战主界面显示的关卡信息
+message PbStage_Challenage
+{
+	optional int64			StageId				=	1;	//关卡ID
+	optional string  		TextureUrl			=	2;	//关卡封面
+	optional int32 			Like				=	3;	//点赞
+	optional int32 			OpenCount			=	4;	//打开次数
+	optional int32			PassRate			=	5;  //通关率
+	optional bool			IsRecom	  			= 	6;  //是否为推荐
+	optional bool 			IsShow				=	7;	//是否被删除
+	optional string			StageName			=	8;	//关卡名
+	optional int64			SubmitTime			=	9;	//提交时间
+	optional int32			PlayState 			=   10; //过关状态,0没玩过1通关2玩过没通关
+//	optional PbPlayerMini 	Author				=	11; //作者
+	optional bool 			HasNewComment		=	12;	//是否有新的评论
+}
+
+message PbStage_Tree
+{
+	optional int64			StageId				=	1;	//关卡ID
+	optional string  		TextureUrl			=	2;	//关卡封面
+	optional string			StageName			=	3;	//关卡名称
+	optional int64			AuthorId			=	4;	//作者ID
+	optional string			AuthorName			=	5;	//作者名称
+	optional string 		AuthorAvatar		=	6;	//作者头像
+}
+
+//游戏逻辑
+message PbGameLogic
+{
+	required	int32 		Serial		=	1;		//序号
+	required	int64		PlayerId	=	2;		//玩家ID
+//	required	LogicType	LogicType	=	3;		//逻辑
+	required	int32 		ToolType	=	4;		//道具类型
+	required	int32		misc1		=	5;		//参数1
+	required	int32		misc2		=	6;		//参数2
+}
+
+//游戏数据
+message PbGameData
+{
+	required	int64			PlayerId	=	1;		//玩家ID 用于表示该条消息是对哪个玩家做的处理
+	required	PbTGStage		Stage		=	2;     	//初始关卡数据
+	required	int32       	RandomSeek	=	3;	 	//随机因子
+	required	PbPlayer 		APlayer		=	4;		//A玩家
+	required	PbPlayer		BPlayer		=	5;		//B玩家
+	repeated	int32			AChooseProp	=	6;		//A玩家的道具选择
+	repeated	int32			BChooseProp =   7;		//B玩家的道具选择
+	repeated	PbGameLogic 	Logics		=	8;		//游戏逻辑
+	required	int64			Time 		=	9;		//比赛时间
+//	required	BattleResult	Result		=	10;		//比赛结果
+	optional	string 			UniqueId	=	11;		//比赛标识
+	optional	float			AFactor		=	12;		//A战斗系数
+	optional	float			BFactor		=	13;		//B战斗系数
+//	required	BattleResult	BResult		=	14;		//B比赛结果
+	optional	int32			ExtId		=	15;		//表示新版本
+}
+
+//块
+message PbBlock
+{
+	required int32    Id1         =  1;
+	required int32    Id2         =  2;
+	required int32    Id3         =  3;
+	required int32    Id4         =  4;
+	required int32 	  Id5		  =	 5;
+	required int32 	  Id6		  =	 6;
+	required int32 	  Id7		  =	 7;
+}
+
+//元素块主题
+message PbItemMotif
+{
+	required int32    Id		=  1; //元素块ID
+	required string   Texture   =  2; //元素块对应的贴图名字
+}
+
+//主题组
+message PbMotifGroup
+{
+	required int64	 Id			=  1;
+	required string  Name		=  2;	// 主题名称
+	repeated PbItemMotif Motifs =  3;	// 主题内容
+}
+
+// 主题组简易信息
+message PbMotifGroupInfo
+{
+	required int64			Id				=	1;
+	required string 		Name			=	2;
+	required int32	 		Count			=	3;
+}
+
+//掉落组
+message PbDropBlock
+{
+	repeated int32    DropIds     =  1;
+}
+
+//目标
+message PbTaskTarget
+{
+	required int32    Target      =  1;
+	required int32    Num         =  2;
+	required int32    Cur         =  3;
+}
+
+//棋盘滚动目标
+message PbRollTarget
+{
+	required int32    		Type        =  1;
+	required int32    		RollNum     =  2;
+	required int32    		SerchRow    =  3;
+	required bool     		IsTargetAdd =  4;
+	repeated PbTaskTarget 	Targets 	=  5;
+}
+
+//故事简易信息
+message PbTGStoryInfo
+{
+	required string 		Id			  		=  1;		//故事ID
+	optional string   		Name          		=  2;		//故事名称
+	optional int32    		StoryType     		=  3;		//故事模式
+	optional string   		TextureUrl    		=  4;		//封面标示
+	optional int64    		SubmitTick    		=  5;		//上传时间
+	optional PbPlayer		Author		  		=  6;		//作者
+	optional string			StoryIntro	  		=  7;		//故事简介
+	optional int32    		Praise     	  		=  8;		//好评
+	optional int32    		Negative      		=  9;		//差评
+	optional int32   		Downloads	  		=  10;		//下载量
+	optional bool           IsCanCreateBattle  	=  11; 		//是否可以用来开比赛
+	optional bool  			IsFromPkShop  		=  12;	  	//是否来自商店
+	optional int32			PlayState			=  13;		//过关状态,0没玩过1通关2玩过没通关
+	optional int32			StageCount			=  14;		//关卡个数
+	optional bool 			IsSubmit	  		=  15;		//是否上传过
+	optional int32 			PermitCreateCompetition		=  16;	//允许其他玩家点赞收藏后开启竞技比赛
+}
+
+//故事
+message PbTGStory
+{
+	required string 		Id			  =  1;		//故事ID
+	optional string   		Name          =  2;		//故事名称
+	optional PbPlayer   	Author    	  =  3;		//作者
+	optional string   		ResUrl        =  4;		//资源标示
+	optional string   		TextureUrl    =  5;		//封面标示
+	optional int32    		StoryType     =  6;		//故事模式
+	optional int32    		TargetType    =  7;		//目标类型
+	optional int32    		MoneyType     =  8;		//货币类型
+	optional int32    		Cost     	  =  9;		//货币数量
+	optional int32    		Praise     	  =  10;	//好评
+	optional int32    		Negative      =  11;	//差评
+	optional int32    		Downloads     =  12;	//下载次数
+	optional int64    		SubmitTick    =  13;	//上传时间
+	optional int32 			AuditStatus	  =  14;	//审核状态
+	optional int64			DownloadTick  =  15;	//下载时间
+	optional bool 			IsPraised	  =	 16;    //是否点赞过
+	optional bool			IsNegatived   =  17;    //是否差评过
+	optional string         VoiceUrl	  =  18;	//声音标示
+	optional int32			VoiceTime	  =  19;	//声音长度
+	optional string			StoryIntro	  =  20;	//故事简介
+	optional bool 			IsSubmit	  =  21;	//是否上传过
+	optional bool    		IsSubmitPk	  =  22;	//是否上传过PK商店
+	repeated PbPropData 	Props		  =  23;	//道具类型
+	optional bool 			IsDownload	  =  24;	//购买过
+	optional bool           NeedUpdate	  =  25;	//是否需要更新
+	optional bool 			IsSubmitStoryShop  =  26; //是否上传故事集商店客户端用
+	optional bool 			IsSubmitPKShop	   =  27; //是否上传PK关卡集商店客户端用
+	optional bool           IsCanCreateBattle  =  28; //是否可以用来开比赛
+	optional int32			PlayState			=  29;//过关状态,0没玩过1通关2玩过没通关
+	optional bool           IsUseLimit  		=  30; //每回合是否限制使用次数 true 限制 false 不限制
+	optional int32			StageCount			=  31; //关卡数
+	optional bool 			IsConditionLimit	=  32[default = true];	//是否条件限制
+	optional bool 			IsElementLimit1		=  33[default = false];	//是否限制元素1
+	optional bool 			IsElementLimit2		=  34[default = false];	//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  35;
+	repeated PbTaskTarget	BLimitTargets1		=  36;
+	repeated PbTaskTarget	ALimitTargets2		=  37;
+	repeated PbTaskTarget	BLimitTargets2		=  38;
+	optional int32 			PermitCreateCompetition		=  39;	//允许其他玩家点赞收藏后开启竞技比赛
+}
+
+//故事数据本地化数据
+message PbStoryData
+{
+	required string 		Id			  =  1;		//故事ID
+	optional string   		Name          =  2;		//故事名称
+	optional string   		AuthorName    =  3;		//作者名称
+	optional string   		ResUrl        =  4;		//资源标示
+	optional string   		TextureUrl    =  5;		//封面标示
+	optional int32    		StoryType     =  6;		//故事模式
+	optional int32    		MoneyType     =  7;		//货币类型
+	optional int32    		Cost     	  =  8;		//货币类型
+	optional int32    		Praise     	  =  9;	    //好评
+	optional int32    		Negative      =  10;	//差评
+	optional int32    		Downloads     =  11;	//下载次数
+	optional int64    		SubmitTick    =  12;	//上传时间
+	optional int32 			AuditStatus	  =  13;	//审核状态
+	optional int32          ServerId	  =  14;	//作者的服务器ID
+	optional int64          PlayerId	  =  15;	//作者的角色ID
+	repeated PbTGStageInfo 	Stages		  =  16;	//现有棋盘
+	repeated int32 			LevelIndexs	  =  17;	//关卡序列
+	repeated int64 			LevelIds	  =  18;	//关卡id
+	optional int32			StoryTarget   =  19;    //生存条件
+	optional int32          TargetNum     =  20;    //最大限制条件
+	optional int32          NowTargetNum  =  21;    //当前限制条件
+	optional int32          SetIsOk       =  22;    //基础设置是否完成
+	optional int32          TheLevel      =  23;    //故事进度
+	optional bool           IsWin         =  24;    //本局是否赢了
+	optional bool           StoryIsWin    =  25;    //该故事是否赢了
+	optional int32          DefaultPropNum = 26;    //故事集最大可使用道具数量
+	repeated int32			DefaultPropsID = 27;	//故事集默认选中的道具ID链表
+	repeated int32			DefaultPropsNum = 28;	//故事集默认选中的道具Num链表
+	optional bool           IsSetDefaultProp = 29;  //故事集是否设置默认道具
+	repeated PbTGStage 		NowStages	 =  30;		//当前故事中存入的棋盘数据
+	optional int32 			AllScore	 =	31;    	//故事通关的分数
+	optional bool 			IsPraised	 =	32;     //是否点赞过
+	optional bool			IsNegatived  =  33;     //是否差评过
+	repeated int32 			StageIds	 =	34;     //关卡ids
+	repeated int32			Scores  	 =  35;     //关卡评分
+	optional bool 			isSetStoryIcon = 36;	//标记是否修改图片
+	optional string         VoiceUrl	  =  37;	//声音标示
+	optional int32			VoiceTime	  =  38;	//声音长度
+	repeated int32			BasDefaultPropsID = 39;	//故事集初始化默认选中的道具ID链表
+	repeated int32			BasDefaultPropsNum = 40;//故事集初始化默认选中的道具Num链表
+	optional int32 			BasdefaultPropNum = 41;	//故事集初始化默认最大可使用道具种类数量
+	optional int32 			IsCanPass 		  = 42;	//故事竞技 可否通关 0是未赋值 1是不可通关 2是可继续通关
+	optional bool			IsPropcharge	  = 43; //道具是否收费
+	repeated int32 			PlotKeys		  = 44;	//剧情的关卡id集合
+	repeated PbStoryPlotDatas 	PlotDatas	  = 45;	//剧情的关卡数据集合
+	repeated string 	PlotRecordDatas	  = 46;		 //剧情的关卡录音集合
+	optional string			StoryIntro	  =  47;	 //故事简介
+	optional bool 			IsSubmit	  =  48;	 //是否上传过 服务器
+	optional string 		Avatar	 	  =  49;	 //国旗
+	optional bool 		isSubmitStoryShop	  =  50; //是否上传故事集商店客户端用
+	optional bool 		isSubmitPKShop	 	  =  51; //是否上传PK关卡集商店 客户端用
+	optional bool 		IsSubmitPK	 	  	  =  52; //是否上传PK关卡集商店 服务器
+	optional int32 		StoryCostStep		  =	 53; //故事模式的消耗步数
+	optional int32 		StoryCostTarget		  =	 54; //关卡集的完成目标数
+	repeated PbPropData 	Props		  	  =  55;	//道具类型
+	optional bool 	isCanCreateBattle		  =  56;	//是否穿插
+	optional bool 	IsUseLimit				  =  57;	//每回合是否限制使用次数 true 限制 false 不限制
+	optional bool 			IsConditionLimit	=  58[default = true];	//是否条件限制
+	optional bool 			IsElementLimit1		=  59[default = false];	//是否限制元素1
+	optional bool 			IsElementLimit2		=  60[default = false];	//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  61;
+	repeated PbTaskTarget	BLimitTargets1		=  62;
+	repeated PbTaskTarget	ALimitTargets2		=  63;
+	repeated PbTaskTarget	BLimitTargets2		=  64;
+	optional int32 			PermitCreateCompetition		=  65;	//允许其他玩家点赞收藏后开启竞技比赛
+}
+
+//故事记录
+message PbStoryRecord
+{
+	required string 		Id			  =  1;		//故事ID
+	optional int32    		Progress      =  2;		//当前进度
+	optional int32	 		ProgressState =  3; 	//当前进度的状态 0开启，1成功，2失败
+	optional int32   		SurplusStep	  =  4;		//剩余步数
+	repeated PbPropRecord	Props		  =  5;		//道具信息
+	optional PbStoryRank    Rank		  =  6;		//关卡分数
+	optional bool 			IsConditionLimit	=  7;//是否条件限制
+	optional bool 			IsElementLimit1		=  8;//是否限制元素1
+	optional bool 			IsElementLimit2		=  9;//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  10;
+	repeated PbTaskTarget	ALimitTargets2		=  11;
+}
+
+// 故事集成绩
+message  PbStoryRank
+{
+	required PbPlayer Player			= 1;
+	required int32   PassStep			= 2;		//使用步数
+	required int32   Score				= 3;
+	required int32   CurProgress		= 4;
+	required bool    IsPass				= 5;
+	required int32   Rank				= 6;
+	required int32   Target				= 7;
+	required int32	 ProgressState      = 8;  //0开启，1成功，2失败
+	required bool    IsTimeLimit		= 9;
+	optional int64 	 Tick				= 10;
+	optional int32 	 UsedPropCount		= 11;
+	optional int32   RuleType			= 12; // 0:消除  1：收集
+	optional bool	 IsConditionLimit	= 13;//开启时间步数模式
+	optional int32	 StoryType			= 14;//
+	optional int32	 CompleteCount		= 15;//完成关卡数量
+}
+
+//棋盘道具宝箱
+message PbPropChest
+{
+	optional int32    Idx     		=  1;	//宝箱所在棋盘的下标(序号)
+	repeated int32    PropIds     	=  2;	//宝箱内包含的道具ID数组
+	repeated int32    PropNums     	=  3;	//宝箱内包含的道具数量数组
+	repeated int32    PropWeights   =  4;	//宝箱内包含的道具在[随机获取]模式下被获得的权重
+	optional int32    HitTimes      =  5;	//宝箱被打开需要消除的次数
+	optional bool     GetByRamdom   =  6;   //道具是否是以随机的形式获得。true - 随机获取道具;false - 按回合顺序获取道具
+}
+
+//传送带数据
+//索引：表示是几个传送带
+message PbBelts
+{
+	required int32	   EnterId		=	1;	//入口的id
+	required int32	   ExitId		=	2;	//出口的id
+	repeated int32	   Bodies		=	3;	//传送带身体坐标
+}
+
+//道具的记录信息
+message PbPropRecord
+{
+	required int32   Id   			=	1;	//道具ID
+	required int32   Num			=	2;	//当前拥有的道具数量
+	required int32   Max			=	3;	//可拥有道具最大数量
+	required int32   BoughtNum		=	4;	//已购买数量
+	required int32 	 UseCount		=	5;	//已使用数量
+}
+
+//道具的数据结构
+message PbPropData
+{
+	required int32   Id   			=	1;	//设置的道具ID
+	required int32   Num			=	2;	//道具可使用的次数
+	required int32   Price			=	3;	//设置的道具价格
+}
+
+//故事集评论点赞列表
+message PbDiscussIdsZanData
+{
+	repeated string    DisIds     	=  1;	//点赞的id
+}
+
+//棋盘毛毛虫
+message PbCaterpillar
+{
+	repeated int32    Body     		=  1;	//虫子的身体
+}
+
+//棋盘隐藏块
+message PbHidden
+{
+	repeated int32    Body     		=  1;	//隐藏块的身体
+	required int32    BlockId       =  2;	//隐藏块ID
+	required int32    BirthIndex    =  3;	//出生点位置
+}
+
+//剧情列表
+message PbStoryPlotDatas
+{
+	repeated PbStoryPlot StoryPlot      = 1;//剧情数据
+}
+
+//剧情数据结构
+message PbStoryPlot
+{
+	required bool IsPlay				= 1;//是否播放剧情
+	required int32 IndexBeginPlay		= 2;//播放时机
+	required string PlotName			= 3;//剧情名字
+	repeated PbDescData DescDatas		= 4;//剧情描述列表
+	required bool IsJumpOut 			= 5;//是否允许跳过
+	required int32 PlotId 				= 6;//剧情id
+	required int32 DescTime 			= 7;//对白总时长
+}
+
+//剧情描述数据
+message PbDescData
+{
+	required string DescText 			= 1;//对白文本
+	required string VoiceUrl 			= 2;//录音url
+	required int32 DescPlayTime 		= 3;//对白播放时间
+	required string TexUrl				= 4;//背景url
+	required bool IsUseTex				= 5;//背景使用
+	required int32 RecordLength			= 6;//录音时长
+	required int32 id					= 7;//id
+}
+
+//棋盘魔术帽
+message PbMagicHat
+{
+	optional int32    Idx     			=  1;	//魔术帽所在棋盘的下标(序号)
+	repeated int32    ElementIds    	=  2;	//魔术帽内包含的元素ID数组
+	repeated PbPropChest   PropChests	=  3;	//魔术帽内包含的道具宝箱数组
+	optional int32    OutPutPropCount   =  4;	//每次喷射物品数量
+	optional int32    HitTimes      	=  5;	//喷射需要消除次数
+}
+
+//关卡树排行榜
+message PbStageTreeRank
+{
+	optional PbPlayer Player			= 1;
+	optional int32    Rank				= 2;
+	optional int64	  Time				= 3;
+	optional int32	  CompleteCount		= 4;
+}
+
+//关卡树记录
+message PbStageTreeRecord
+{
+	optional int64 			TreeId		  =  1;		//故事ID
+	optional int32   		ConditionValue=  2;		//剩余时间步数
+	repeated PbPropRecord	Props		  =  3;		//道具信息
+	optional bool 			IsConditionLimit	=  4;//是否条件限制
+	optional bool 			IsElementLimit1		=  5;//是否限制元素1
+	optional bool 			IsElementLimit2		=  6;//是否限制元素2
+	repeated PbTaskTarget	ALimitTargets1		=  7;
+	repeated PbTaskTarget	ALimitTargets2		=  8;
+	optional int32			Energy				=  9;
+	optional int64 			EnergyRecovery		=  10;//上次体力恢复时间
+	optional PbNodeProgress	CurProgress			=  11;//最大节点状态
+}
+
+
+message PbBagProgress
+{
+	optional int32	StageIndex	= 1;
+	optional int32	State		= 2;
+	optional int64  StageId     = 3;
+}
+
+message PbNodeProgress
+{
+	optional int64  NodeId      = 1;
+	optional int32	State		= 2;
+
+}

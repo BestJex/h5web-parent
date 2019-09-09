@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+option java_package = "com.xmbl.h5.web.game.proto";
+option java_outer_classname = "PbPlayerEntity";
+
+//角色
+message PbPlayer
+{
+	required int64 Id = 1;						//角色唯一id
+    optional string Name = 2;					//角色名称
+	optional int32 Level = 3;					//角色等级
+	optional int32 ServerId = 4;				//服务器ID
+	optional int32 CurServerId = 5;				//当前所在服ID   有可能处于战斗服
+	optional int32 LadderLv = 6;				//天梯等级
+	optional int32 LadderStar = 7;				//天梯星数
+	optional string Avatar	= 8;				//头像图片
+	optional int32 State = 9;					//状态
+	optional bool NeedGuild = 10;				//是否需要新手引导
+	optional int32  Rank = 11;					//排行信息
+	optional int32  Model = 12;					//角色人物模型
+	optional int32  Nationality = 13;			//星座
+	repeated int32  Avaters = 14;				//装扮
+	optional string Signature = 15;				//签名
+	optional int32  Constellation = 16;			//国家
+	optional int32 	Age = 17;					//年龄
+	optional int32  Sex = 18;					//性别
+	optional string City = 19;					//城市
+	optional float  GenLon = 20;  				//坐标经度
+	optional float  GenLat = 21; 				//坐标纬度
+	optional int32	LadderAddStarScore = 22;	//天梯分数
+//	repeated PbItem	Props = 23;					//背包道具相关信息
+}

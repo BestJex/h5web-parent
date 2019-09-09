@@ -1,0 +1,1 @@
+protoc --proto_path=D:\code\server\block\h5web-parent\h5web-game\proto --java_out=D:\code\server\block\h5web-parent\h5web-game\src\main\java PbPlayerEntity.proto StageTree.proto MsgObject.proto
