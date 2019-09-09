@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="h5web-common" />
+        <module name="h5web-game" />
+        <module name="h5web-h5Res" />
+        <module name="h5web-rank" />
+        <module name="h5web-static" />
+        <module name="h5web-util" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="h5web-common" options="-parameters" />
+      <module name="h5web-game" options="-parameters" />
+      <module name="h5web-h5Res" options="-parameters" />
+      <module name="h5web-rank" options="-parameters" />
+      <module name="h5web-static" options="-parameters" />
+      <module name="h5web-util" options="-parameters" />
+    </option>
+  </component>
+</project>
