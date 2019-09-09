@@ -1,0 +1,46 @@
+{"mc":{
+	"ice":{
+		"frameRate":18,
+		"labels":[
+			{"name":"ice","frame":1,"end":5}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"bingkua_0",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"bingkua_1",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"bingkua_2",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"bingkua_3",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"bingkua_4",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"bingkua_3":{"x":83,"y":1,"w":80,"h":80},
+		"bingkua_1":{"x":83,"y":83,"w":80,"h":80},
+		"bingkua_0":{"x":1,"y":1,"w":80,"h":80},
+		"bingkua_4":{"x":1,"y":83,"w":80,"h":80},
+		"bingkua_2":{"x":165,"y":1,"w":80,"h":80}
+	}}

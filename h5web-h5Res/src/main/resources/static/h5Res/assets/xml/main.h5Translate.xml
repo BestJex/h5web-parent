@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<h5Translates>
+  <h5Translate id="10000" language1="关卡简介" language2="關卡簡介" language3="Level introduction" language4="関カ所" />
+  <h5Translate id="10001" language1="游戏规则" language2="遊戲規則" language3="The rules of the game" language4="ゲームのルール" />
+  <h5Translate id="10002" language1="收集目标" language2="收集目標" language3="Collect the target" language4="目標を集める" />
+  <h5Translate id="10003" language1="消除目标" language2="消除目標" language3="To eliminate the target" language4="目標を解消する。" />
+  <h5Translate id="10004" language1="失败限制条件" language2="失敗限制條件" language3="Failure constraint" language4="失敗制限条件" />
+  <h5Translate id="10005" language1="可使用道具" language2="可使用道具" language3="Props available" language4="道具を使用できる" />
+  <h5Translate id="10006" language1="排行榜" language2="排行榜" language3="Ranking" language4="ランキング" />
+  <h5Translate id="10007" language1="作者很懒，什么都没有留下。" language2="作者很懶，什麼都沒有留下。" language3="The author was lazy and left nothing behind." language4="作者は怠け者で,何も残っていない。" />
+  <h5Translate id="10008" language1="简介" language2="簡介" language3="Introduction to the" language4="简介" />
+  <h5Translate id="10009" language1="性别" language2="性別" language3="Gender" language4="性別" />
+  <h5Translate id="10010" language1="男" language2="男" language3="male" language4="男" />
+  <h5Translate id="10011" language1="女" language2="女" language3="female" language4="女" />
+  <h5Translate id="10012" language1="生成风车数量:" language2="生成風車數量:" language3=" Number of windmills generated:" language4="生成風車数:" />
+  <h5Translate id="10013" language1="是否可以生成风车:" language2="是否可以生成風車:" language3=" Can windmill be generated:" language4="風車を生成できるかどうか:" />
+  <h5Translate id="10014" language1="道具是否收费:" language2="道具是否收費:" language3="Whether the props are charged:" language4="道具か有料:" />
+  <h5Translate id="10015" language1="是" language2="是" language3="is" language4="は" />
+  <h5Translate id="10016" language1="否" language2="否" language3="no" language4="いいえ" />
+  <h5Translate id="10017" language1="关卡介绍" language2="關卡介紹" language3="Level introduction" language4="難しい関門を绍介" />
+  <h5Translate id="10018" language1="最大连击数:" language2="最大連擊數:" language3=" Maximum number of consecutive hits:" language4="最大あずかる数:" />
+  <h5Translate id="10019" language1="无传染块时，是否提前结束比赛:" language2="無傳染塊時，是否提前結束比賽:" language3="If there is no infectious block, will the match be terminated earlier?" language4="無伝染块の時、試合を終え、繰り上げるか:" />
+  <h5Translate id="10020" language1="消除" language2="消除" language3="eliminate" language4="解消" />
+  <h5Translate id="10021" language1="收集" language2="收集" language3="collect" language4="収集" />
+  <h5Translate id="10022" language1="未完成目标时，胜利规则:" language2="未完成目標時，勝利規則:" language3=" Win rule:" language4="未完成目标时，胜利规则:" />
+  <h5Translate id="10023" language1="优先判断目标数" language2="優先判斷目標數" language3="Prioritize the number of targets" language4="優先目標判断" />
+  <h5Translate id="10024" language1="优先判断分数" language2="優先判斷分數" language3="Priority judgment score" language4="優先的判断点数" />
+  <h5Translate id="10025" language1="通关率" language2="通關率" language3="Customs clearance rate" language4="通関率" />
+  <h5Translate id="10026" language1="玩家1" language2="玩家1" language3="Player 1" language4="プレイヤー1" />
+  <h5Translate id="10027" language1="玩家2" language2="玩家2" language3="Player 2" language4="プレイヤー2" />
+  <h5Translate id="10028" language1="时间:" language2="時間:" language3="Time:" language4="时间:" />
+  <h5Translate id="10029" language1="步数:" language2="步數:" language3="Steps:" language4="歩数:" />
+  <h5Translate id="10030" language1="该比赛没有可用道具" language2="該比賽沒有可用道具" language3="No props are available for the game" language4="同大会は可用道具" />
+  <h5Translate id="10031" language1="最先通关玩家" language2="最先通關玩家" language3="The first player to go through the customs" language4="最優先の通関者" />
+  <h5Translate id="10032" language1="尚未有玩家进入排行" language2="尚未有玩家進入排行" language3="No player has yet entered the rankings" language4="ゲーマーがランクインしていない。" />
+  <h5Translate id="10033" language1="您尚未进入排行" language2="您尚未進入排行" language3="You are not yet in the rankings" language4="あなたはまだランキングに入っていない。" />
+  <h5Translate id="10034" language1="我的排名" language2="我的排名" language3="My ranking" language4="私の順位" />
+  <h5Translate id="10035" language1="详情" language2="詳情" language3="details" language4="詳細" />
+  <h5Translate id="10036" language1="通关详情" language2="通關詳情" language3="Customs clearance details" language4="通関の詳細" />
+  <h5Translate id="20000" language1="得分" language2="得分" language3="score" language4="得点" />
+  <h5Translate id="20001" language1="步数" language2="步數" language3="They count" language4="歩数" />
+  <h5Translate id="20002" language1="时间" language2="時間" language3="time" language4="时间" />
+  <h5Translate id="20003" language1="收起" language2="收起" language3="Pack up" language4="畳ん" />
+  <h5Translate id="20004" language1="胜利目标" language2="勝利目標" language3="Victory goal" language4="勝利を目標に" />
+  <h5Translate id="20005" language1="滚动目标" language2="滾動目標" language3="Scroll to the target" language4="転がる目標" />
+  <h5Translate id="20006" language1="打开弹幕" language2="打開彈幕" language3="Open the barrage" language4="弾幕を" />
+  <h5Translate id="20007" language1="被点道具" language2="被點道具" language3="Points and items" language4="ポイント道具されて" />
+  <h5Translate id="20008" language1="免费" language2="免費" language3="free" language4="無料" />
+  <h5Translate id="20009" language1="付费" language2="付費" language3="pay" language4="有料" />
+  <h5Translate id="20010" language1="完成目标数:" language2="完成目標數:" language3="Number of targets completed :" language4="完成目標数:" />
+  <h5Translate id="20011" language1="使用时间:" language2="使用時間:" language3="Usage time :" language4="使用时间:" />
+  <h5Translate id="20012" language1="使用步数:" language2="使用步數:" language3="Number of steps used :" language4="使用歩数:" />
+  <h5Translate id="20013" language1="达成分数:" language2="達成分數:" language3="Achieve score :" language4="合意点数:" />
+  <h5Translate id="20014" language1="个" language2="個" language4="つ" />
+  <h5Translate id="20015" language1="秒" language2="秒" language3="seconds" language4="秒" />
+  <h5Translate id="20016" language1="步" language2="步" language3="step" language4="歩" />
+  <h5Translate id="20017" language1="分" language2="分" language3="points" language4="分" />
+  <h5Translate id="20018" language1="跳过滚动" language2="跳過滾動" language3="Skip the scroll" language4="転がる飛び越え" />
+  <h5Translate id="20019" language1="目标滚动模式:完成指定目标棋盘滚动" language2="目標滾動模式:完成指定目標棋盤滾動" language3="Target scroll mode: completes the specified target checkerboard scroll" language4="目標に転がるモデル:指定目標将棋盤転がる" />
+  <h5Translate id="20020" language1="自动滚动模式:消除检索行数内所有目标色块棋盘滚动" language2="自動滾動模式:消除檢索行數內所有目標色塊棋盤滾動" language3="Auto scroll mode: eliminates all target color block checkerboard scrolling within the number of rows retrieved" language4="自動転がるモードは、検索行数内のすべての解消目標ジャン将棋盤転がる" />
+  <h5Translate id="20021" language1="检索行数" language2="檢索行數" language3="Retrieve the number of rows" language4="検索ライン数" />
+  <h5Translate id="20022" language1="尚未进入" language2="尚未進入" language3="Not into" language4="まだ入って" />
+  <h5Translate id="20023" language1="比赛信息" language2="比賽資訊" language3="Game information" language4="試合情報" />
+  <h5Translate id="11000" language1="开始游戏" language2="開始遊戲" language3="Start" language4="ゲームを始める" />
+  <h5Translate id="11001" language1="打开或下载游戏" language2="打開或下載遊戲" language3="Open or download games" language4="ダウンロードやゲームを開け" />
+  <h5Translate id="11002" language1="打开游戏" language2="打開遊戲" language3="Open the game" language4="ゲームを" />
+  <h5Translate id="11003" language1="下载游戏" language2="下載遊戲" language3="Download the game" language4="ゲームのダウンロード" />
+  <h5Translate id="11004" language1="返回游戏" language2="返回游戲" language3="Return to the game" language4="ゲームに戻る" />
+  <h5Translate id="21000" language1="确定" language2="確定" language3="determine" language4="確定" />
+  <h5Translate id="21001" language1="本关详情" language2="本關詳情" language3="Level details" language4="本の詳細" />
+  <h5Translate id="21002" language1="游戏音效" language2="遊戲音效" language3="The game sound" language4="ゲームサウンド" />
+  <h5Translate id="21003" language1="背景音乐" language2="背景音樂" language3="The background music" language4="背景音楽" />
+  <h5Translate id="21004" language1="继续游戏" language2="繼續遊戲" language3="To continue the game" language4="ゲームを続ける" />
+  <h5Translate id="21005" language1="重玩本关" language2="重玩本關" language3="Replay level" language4="重游本关" />
+  <h5Translate id="21006" language1="再来一次" language2="再來一次" language3="One more time" language4="もう一回" />
+  <h5Translate id="30000" language1="我的回合" language2="我的回合" language3="My leg" language4="私の回" />
+  <h5Translate id="30001" language1="对手回合" language2="對手回合" language3="Opponents round" language4="相手ターン" />
+  <h5Translate id="30002" language1="任务完成，游戏结束!" language2="任務完成，遊戲結束!" language3="Mission accomplished, game over!" language4="任務を終え、ゲームを終えた!" />
+  <h5Translate id="30003" language1="游戏结束" language2="遊戲結束" language3="Game over" language4="ゲームが終わった" />
+  <h5Translate id="30004" language1="本回合道具使用次数已用完" language2="本回合道具使用次數已用完" language3="The use times of props in this round have been used up" language4="本回道具回数用完" />
+  <h5Translate id="30005" language1="表演中无法使用道具!" language2="表演中無法使用道具!" language3="Props cannot be used during the performance!" language4="公演で使用できない道具!" />
+  <h5Translate id="30006" language1="无法使用道具!" language2="無法使用道具!" language3="Cannot use props!" language4="道具が使えない!" />
+  <h5Translate id="30007" language1="增加步数" language2="增加步數" language3="Adding steps" language4="歩数増加" />
+  <h5Translate id="30008" language1="增加时间" language2="增加時間" language3="Increase the time" language4="时间の増加" />
+  <h5Translate id="30009" language1="无法使用此道具" language2="無法使用此道具" language3="Can't use this item" language4="この道具を使用できない" />
+  <h5Translate id="30010" language1="无法打乱棋盘，您还有道具可用!" language2="無法打亂棋盤，您還有道具可用!" language3="Can't disturb board, you still have items available!" language4="将棋盤乱さないあなたも、道具が使える!" />
+  <h5Translate id="30011" language1="没有可移动的元素打乱棋盘" language2="沒有可移動的元素打亂棋盤" language3="There are no moving elements to disrupt the board" language4="乱さない移動できる元素の将棋盤" />
+  <h5Translate id="30012" language1="敬请期待!" language2="敬請期待!" language3="Stay tuned!" language4="どうぞご期待ください!" />
+  <h5Translate id="30013" language1="道具数量为0" language2="道具數量為0" language3="The number of props is 0" language4="道具の数はゼロ" />
+  <h5Translate id="30014" language1="毛球移动中!" language2="毛球移動中!" language3="Badminton is moving!" language4="おまけに移動中!" />
+  <h5Translate id="30015" language1="我方形成特效，继续行动!" language2="我方形成特效，繼續行動!" language3="We form special effects and move on!" language4="当方、スキューバーダイビングを形成する行動を続ける!" />
+  <h5Translate id="30016" language1="对方形成特效，继续行动!" language2="對方形成特效，繼續行動!" language3="Create special effects and move on!" language4="相手が特効を形成し、継続して行动!" />
+  <h5Translate id="30017" language1="不是你的回合" language2="不是你的回合" language3="It's not your turn" language4="あなたの回ではない" />
+  <h5Translate id="30018" language1="地图数据有误，分享参数不正确" language2="地圖數據有誤，分享參數不正確" language3="Map data is wrong, share parameters is not correct" language4="地図データを误り、分かち合いのパラメータ正しくない" />
+  <h5Translate id="30019" language1="没有更多的排行榜啦!" language2="沒有更多的排行榜啦!" language3="No more list!" language4="多くのないランキング!" />
+  <h5Translate id="30020" language1="连接成功，欢迎回来" language2="連接成功，歡迎回來" language3="Successful connection. Welcome back." language4="接続成功、おかえり" />
+  <h5Translate id="30021" language1="请在客户端使用此功能" language2="請在客戶端使用此功能" language3="Please use this feature on the client" language4="この機能をクライアントに使用してください" />
+  <h5Translate id="30022" language1="排行榜暂未开放，敬请期待" language2="排行榜暫未開放，敬請期待" language3="List temporarily not open, please look" language4="ランキングまだ開放を楽しみに" />
+  <h5Translate id="30023" language1="关卡ID不能为空" language2="關卡ID不能為空" language3="Checkpoints ID can not be empty" language4="難しい関門のidを空にはできない" />
+  <h5Translate id="30024" language1="非正式环境不能获取微信信息" language2="非正式環境不能獲取微信信息" language3="Informal environment cannot get micro letter information" language4="非公式環境wechat情報を入手できない" />
+  <h5Translate id="30025" language1="无名小卒" language2="無名小卒" language3="nobody" language4="無名選手" />
+  <h5Translate id="30026" language1="查询棋盘数据异常" language2="查詢棋盤數據異常" language3="Query board data anomalies" language4="異常照会将棋盤のデータ" />
+  <h5Translate id="30027" language1="增加步数" language2="增加步數" language3="Adding steps" language4="歩数増加" />
+  <h5Translate id="30028" language1="增加时间" language2="增加時間" language3="Increase the time" language4="时间の増加" />
+  <h5Translate id="30029" language1="任务失败，游戏结束!" language2="任務失敗，遊戲結束!" language3="The mission failed and the game is over!" language4="任務の失敗は、ゲーム終了!" />
+  <h5Translate id="30030" language1="请竖屏模式体验" language2="請豎屏模式體驗" language3="Please experience in portrait mode" language4="縦モードください.体験" />
+  <h5Translate id="30031" language1="关卡已被删除" language2="關卡已被刪除" language3="關卡已被刪除" language4="關卡已被刪除" />
+  <h5Translate id="30032" language1="关卡已下架" language2="關卡已下架" language3="關卡已下架" language4="關卡已下架" />
+  <h5Translate id="30033" language1="关卡集已被删除" language2="關卡集已被刪除" language3="關卡集已被刪除" language4="關卡集已被刪除" />
+  <h5Translate id="30034" language1="关卡集已下架" language2="關卡集已下架" language3="關卡集已下架" language4="關卡集已下架" />
+  <h5Translate id="30035" language1="分享失败" language2="分享失敗" language3="分享失敗" language4="分享失敗" />
+  <h5Translate id="30036" language1="拉取信息有误,请退出尝试重新进入" language2="拉取信息錯誤，請退出嘗試重新進入" language3="拉取信息錯誤，請退出嘗試重新進入" language4="拉取信息錯誤，請退出嘗試重新進入" />
+  <h5Translate id="30037" language1="新关卡模式正在构建中" language2="新關卡模式正在構建中" language3="新關卡模式正在構建中" language4="新關卡模式正在構建中" />
+  <h5Translate id="30038" language1="id不能为空" language2="id不能為空" language3="id不能為空" language4="id不能為空" />
+  <h5Translate id="80000" language1="玩家id不能为空" language2="玩家id不能為空" language3="Player id cannot be empty" language4="プレイヤーのidをできない空" />
+  <h5Translate id="80001" language1="关卡信息不存在" language2="關卡信息不存在" language3="Level information does not exist" language4="検問情報が存在しない" />
+  <h5Translate id="80002" language1="查询排行榜信息出错" language2="查詢排行榜信息出錯" language3="Error querying leaderboard information" language4="ランキング情報照会间违い" />
+  <h5Translate id="80003" language1="关卡排行榜id不能为空" language2="關卡排行榜id不能為空" language3="Level leaderboard id cannot be empty" language4="難しい関門ランキングのidをできない空" />
+  <h5Translate id="80004" language1="排行榜详情查询出错" language2="排行榜詳情查詢出錯" language3="Leaderboard details query error" language4="ランキング详细照会间违い" />
+  <h5Translate id="80005" language1="关卡排行信息不存在,或关卡排行id传参有误" language2="關卡排行信息不存在,或關卡排行id傳參有誤" language3="The level information does not exist, or the level id is incorrect." language4="検問所ランキング情報は存在しない、または検問所ランキングid伝参误り" />
+  <h5Translate id="80006" language1="新增排行榜调用参数不能为空" language2="新增排行榜調用參數不能為空" language3="New leaderboard call parameters cannot be empty" language4="新規ランキング発進パラメータは空にできない" />
+  <h5Translate id="80007" language1="没有更多数据啦" language2="沒有更多數據啦" language3="No more data." language4="データを多くないよ" />
+  <h5Translate id="80008" language1="游戏规则类型传参有误" language2="遊戲規則類型傳參有誤" language3="Game rule type is incorrectly passed" language4="ゲームのルールタイプ伝参误り" />
+  <h5Translate id="80009" language1="使用步数不能为空" language2="使用步數不能為空" language3="The number of steps used cannot be empty" language4="使用歩数を空にできない" />
+  <h5Translate id="80010" language1="使用时间不能为空" language2="使用時間不能為空" language3="Usage time cannot be empty" language4="使用時間を空にできない" />
+  <h5Translate id="80011" language1="移除方块数不能为空" language2="移除方塊數不能為空" language3="The number of removed blocks cannot be empty" language4="除去テトリス数を空にできない" />
+  <h5Translate id="80012" language1="获得分数不能为空" language2="獲得分數不能為空" language3="Earning scores cannot be empty" language4="点数は空にできない" />
+  <h5Translate id="80013" language1="使用步数必须为正整数" language2="使用步數必須為正整數" language3="The number of steps used must be a positive integer" language4="使用歩数を正整数なければ" />
+  <h5Translate id="80014" language1="使用时间必须为正整数" language2="使用時間必須為正整數" language3="Usage time must be a positive integer" language4="使用時間を正整数なければ" />
+  <h5Translate id="80015" language1="移除方块数必须为正整数" language2="移除方塊數必須為正整數" language3="The number of removed blocks must be a positive integer" language4="除去テトリス数を正整数なければ" />
+  <h5Translate id="80016" language1="获得分数必须为正整数" language2="獲得分數必須為正整數" language3="The score must be a positive integer" language4="点数を正整数なければ" />
+  <h5Translate id="80017" language1="提交关卡游戏成绩失败" language2="提交關卡遊戲成績失敗" language3="Failed to submit level game scores" language4="検問所をゲームの成績提出失敗" />
+  <h5Translate id="80018" language1="提交关卡游戏成绩成功" language2="提交關卡遊戲成績成功" language3="Successfully submitted level game results" language4="検問所をゲームの成績提出成功" />
+  <h5Translate id="80019" language1="用户授权失败,未获取到code" language2="用戶授權失敗,未獲取到code" language3="User authorization failed, no code was obtained" language4="ユーザーのライセンスに失敗し、未取得までcode" />
+  <h5Translate id="80020" language1="用户信息查询失败" language2="用戶信息查詢失敗" language3="User information query failed" language4="ユーザー情報の照会失敗" />
+  <h5Translate id="80021" language1="成功" language2="成功" language3="success" language4="成功" />
+  <h5Translate id="80022" language1="wxUserId不能为空" language2="wxUserId不能為空" language3="wxUserId cannot be empty" language4="wxuseridは空にできない" />
+  <h5Translate id="80023" language1="wxUserId授权失效,请重新授权" language2="wxUserId授權失效,請重新授權" language3="wxUserId authorization expired, please re-authorize" language4="wxuseridライセンス失効して、再びライセンス" />
+  <h5Translate id="80024" language1="微信授权成功" language2="微信授權成功" language3="WeChat authorization succeeded" language4="wechatライセンス成功" />
+  <h5Translate id="80025" language1="微信授权失败" language2="微信授權失敗" language3="WeChat authorization failed" language4="wechatライセンス失敗" />
+  <h5Translate id="80026" language1="传参不能为空" language2="傳參不能為空" language3="Passing parameters cannot be empty" language4="伝参は空にできない" />
+  <h5Translate id="80027" language1="StageId必须是正整数" language2="StageId必須是正整數" language3="StageId must be a positive integer" language4="stageidなけれは正整数" />
+  <h5Translate id="80028" language1="游戏服务查询关卡数据异常" language2="遊戲服務查詢關卡數據異常" language3="Game service query level data is abnormal" language4="ゲームサービス照会検問データ異常" />
+  <h5Translate id="80029" language1="查询成功" language2="查詢成功" language3="search successful" language4="照会成功" />
+  <h5Translate id="90000" language1="作者名称" language2="作者名稱" language3="The author name" language4="著者の名前" />
+  <h5Translate id="90001" language1="神秘关卡" language2="神秘關卡" language3="The mysterious gate" language4="神秘の検問所" />
+  <h5Translate id="90002" language1="无限" language2="無限" language3="infinite" language4="无限の" />
+  <h5Translate id="90003" language1="我是测试标题" language2="我是測試標題" language3="I am the test title" language4="私はテストのタイトル" />
+  <h5Translate id="90004" language1="我是作者" language2="我是作者" language3="I am a writer" language4="私は著者" />
+  <h5Translate id="90005" language1="点击开始按钮" language2="點擊開始按鈕" language3="Click the start button" language4="スタートボタンをクリック" />
+  <h5Translate id="90006" language1="付费获得道具" language2="付費獲得道具" language3="To pay for items" language4="有料で道具" />
+  <h5Translate id="90007" language1="免费道具" language2="免費道具" language3="Free items" language4="無料道具" />
+  <h5Translate id="90008" language1="随机" language2="隨機" language3="random" language4="ランダム" />
+  <h5Translate id="90009" language1="请滑动到底部" language2="請滑動到底部" language3="Slide to the bottom, please" language4="一体スライド部ください" />
+  <h5Translate id="90010" language1="中国" language2="中國" language3="China" language4="中国" />
+  <h5Translate id="90011" language1="北京" language2="北京" language3="Beijing" language4="北京" />
+  <h5Translate id="90012" language1="方块创造" language2="方塊創造" language3="Diamonds create" language4="ブロック創造" />
+  <h5Translate id="90013" language1="失败" language2="失敗" language3="失敗" language4="失敗" />
+  <h5Translate id="40000" language1="故事模式" language2="故事模式" language3="The story mode" language4="ストーリーモード" />
+  <h5Translate id="40001" language1="生存模式" language2="生存模式" language3="Survival mode" language4="生存モデル" />
+  <h5Translate id="40002" language1="分享" language2="分享" language3="share" language4="分かち合い" />
+  <h5Translate id="40003" language1="跳关" language2="跳關" language3="Jump off" language4="踊って" />
+  <h5Translate id="40004" language1="引用" language2="引用" language3="Reference" language4="引用" />
+  <h5Translate id="40005" language1="确认跳过本关" language2="確認跳過本關" language3="Confirm to skip this pass" language4="確認をスキップ本关" />
+  <h5Translate id="40006" language1="跳过本关将消耗" language2="跳過本關將消耗" language3="Skip this pass will consume" language4="チェ・ユンヒ本关消耗する" />
+  <h5Translate id="40007" language1="跳过次数会在通关后恢复" language2="跳過次數會在通關後恢復" language3="The number of skips will be restored after customs clearance" language4="通関をスキップ回数がて回復した" />
+  <h5Translate id="40008" language1="剩余跳关次数" language2="剩餘跳關次數" language3="Remaining number of trips" language4="残りのジャンプ関回数" />
+  <h5Translate id="40009" language1="查看排名" language2="查看排名" language3="Check the ranking" language4="查看ランキング" />
+  <h5Translate id="40010" language1="我" language2="我" language3="Me" language4="私が" />
+  <h5Translate id="40011" language1="未上榜" language2="未上榜" language3="Not on the list" language4="ランクイン" />
+  <h5Translate id="40012" language1="本关卡集限使用次数" language2="本關卡集限使用次數" language3="The number of times this level is used" language4="難しい関門を集制の回数を使う" />
+  <h5Translate id="40013" language1="本次分享奖励恢复满" language2="本次分享獎勵恢復滿" language3="This sharing reward is fully restored" language4="今回の分かち合いのインセンティブを与える回復満" />
+  <h5Translate id="40014" language1="本次分享奖励恢复" language2="本次分享獎勵恢復" language3="This sharing reward recovery" language4="今回の分かち合いのインセンティブを回復した" />
+  <h5Translate id="40015" language1="限制总步数" language2="限制總步數" language3="Limit total steps" language4="総歩数制限" />
+  <h5Translate id="40016" language1="限制总时间" language2="限制總時間" language3="Limit total time" language4="総制限时间" />
+  <h5Translate id="40017" language1="不要消除" language2="不要消除" language3="Don't eliminate" language4="解消しない" />
+  <h5Translate id="40018" language1="重置" language2="重置" language3="reset" language4="リセット" />
+  <h5Translate id="40019" language1="通关进度" language2="通關進度" language3="Customs clearance progress" language4="通関の進度" />
+  <h5Translate id="40020" language1="通关进度达到{0}%开启下一关" language2="通關進度達到{0}%開啟下一關" language3="Customs clearance progress reaches {0}% to open the next level" language4="一関通関の進度は{0}%完勝で開く" />
+  <h5Translate id="40021" language1="关卡包" language2="關卡包" language3="Level package" language4="関卡包" />
+  <h5Translate id="40022" language1="关卡包简介" language2="關卡包簡介" language3="Introduction ton level packs" language4="関卡包简介" />
+  <h5Translate id="40023" language1="第{0}关" language2="第{0}關" language3="the {0} shut" language4="{0}関" />
+  <h5Translate id="40024" language1="背包" language2="背包" language3="Bag" language4="バックパック" />
+</h5Translates>

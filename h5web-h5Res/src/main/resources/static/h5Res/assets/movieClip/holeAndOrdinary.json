@@ -1,0 +1,64 @@
+{"mc":{
+	"holeAndOrdinary":{
+		"frameRate":10,
+		"labels":[
+			{"name":"holeAndOrdinary","frame":1,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"heidong_0",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_1",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_2",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_3",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_4",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_5",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_6",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"heidong_7",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"heidong_0":{"x":1,"y":173,"w":170,"h":170},
+		"heidong_4":{"x":1,"y":517,"w":170,"h":170},
+		"heidong_6":{"x":173,"y":517,"w":170,"h":170},
+		"heidong_2":{"x":173,"y":345,"w":170,"h":170},
+		"heidong_5":{"x":1,"y":345,"w":170,"h":170},
+		"heidong_3":{"x":173,"y":1,"w":170,"h":170},
+		"heidong_1":{"x":1,"y":1,"w":170,"h":170},
+		"heidong_7":{"x":173,"y":173,"w":170,"h":170}
+	}}

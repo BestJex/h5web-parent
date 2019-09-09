@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AudioConfigs>
+  <AudioConfig id="10001" audioClip="Xenogenesis" when="进入战斗后播放" />
+  <AudioConfig id="10101" audioClip="denglu1" when="登陆界面播放" />
+  <AudioConfig id="10301" audioClip="WhereIstheLove" when="进入主界面播放" />
+  <AudioConfig id="10002" audioClip="sanxiao" />
+  <AudioConfig id="10003" audioClip="sixiao" />
+  <AudioConfig id="10004" audioClip="wuxiao" />
+  <AudioConfig id="10005" audioClip="baoxiang" />
+  <AudioConfig id="10006" audioClip="chuizi" />
+  <AudioConfig id="10007" audioClip="mofabang" />
+  <AudioConfig id="10008" audioClip="jiaohuan" />
+  <AudioConfig id="10009" audioClip="jiasanbu" />
+  <AudioConfig id="10010" audioClip="jiawubu" />
+  <AudioConfig id="10011" audioClip="chongpai" />
+  <AudioConfig id="10012" audioClip="zhadan" />
+  <AudioConfig id="10013" audioClip="bingsui" />
+  <AudioConfig id="10014" audioClip="fengche" />
+  <AudioConfig id="10015" audioClip="heidong" />
+  <AudioConfig id="10016" audioClip="heiqiufenlie" />
+  <AudioConfig id="10017" audioClip="hengshuxiao" />
+  <AudioConfig id="10018" audioClip="liushayidong" />
+  <AudioConfig id="10019" audioClip="xiaochuemo" />
+  <AudioConfig id="10020" audioClip="xiaochuhongbaoshi" />
+  <AudioConfig id="10021" audioClip="xiaochuyunduo" />
+  <AudioConfig id="10022" audioClip="yidong" />
+  <AudioConfig id="10023" audioClip="yidongshibai" />
+</AudioConfigs>

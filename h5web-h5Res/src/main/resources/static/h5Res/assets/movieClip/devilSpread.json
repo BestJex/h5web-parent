@@ -1,0 +1,58 @@
+{"mc":{
+	"devilSpread":{
+		"frameRate":12,
+		"labels":[
+			{"name":"devilSpread","frame":1,"end":7}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"xiaoemo_0",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_1",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_2",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_3",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_4",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_5",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"xiaoemo_6",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"xiaoemo_2":{"x":203,"y":203,"w":200,"h":200},
+		"xiaoemo_5":{"x":203,"y":405,"w":200,"h":200},
+		"xiaoemo_4":{"x":1,"y":203,"w":200,"h":200},
+		"xiaoemo_0":{"x":1,"y":607,"w":200,"h":200},
+		"xiaoemo_1":{"x":1,"y":1,"w":200,"h":200},
+		"xiaoemo_3":{"x":1,"y":405,"w":200,"h":200},
+		"xiaoemo_6":{"x":203,"y":1,"w":200,"h":200}
+	}}

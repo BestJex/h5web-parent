@@ -1,0 +1,52 @@
+{"mc":{
+	"AgainstLight":{
+		"frameRate":24,
+		"labels":[
+			{"name":"AgainstLight","frame":1,"end":6}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"renwu_0_png",
+			"x":5,
+			"y":0
+			},
+			{
+			"res":"renwu_1_png",
+			"x":5,
+			"y":0
+			},
+			{
+			"res":"renwu_2_png",
+			"x":13,
+			"y":0
+			},
+			{
+			"res":"renwu_3_png",
+			"x":20,
+			"y":0
+			},
+			{
+			"res":"renwu_4_png",
+			"x":14,
+			"y":0
+			},
+			{
+			"res":"renwu_5_png",
+			"x":10,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"renwu_5_png":{"x":331,"y":0,"w":156,"h":98},
+		"renwu_3_png":{"x":297,"y":98,"w":135,"h":97},
+		"renwu_0_png":{"x":166,"y":0,"w":165,"h":98},
+		"renwu_4_png":{"x":151,"y":98,"w":146,"h":98},
+		"renwu_2_png":{"x":0,"y":98,"w":151,"h":98},
+		"renwu_1_png":{"x":0,"y":0,"w":166,"h":98}
+	}}

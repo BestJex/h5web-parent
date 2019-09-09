@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stagePackagePositions>
+  <stagePackagePosition id="1" imageName="StageTree_DefaultTex" positions="264,-709,0|74,-555,0|-103,-380,0|-255,-148,0|-25,21,0|195,168,0|358,334,0|441,590,0|257,822,0" />
+  <stagePackagePosition id="2" imageName="StageTree_DefaultTex_Desert" positions="144,-885,0|-3,-612,0|217,-423,0|-49,-255,0|-305,27,0|-65,261,0|208,424,0|320,700,0|134,889,0" />
+  <stagePackagePosition id="3" imageName="StageTree_DefaultTex_Snowfield" positions="-122,-863,0|-372,-635,0|-106,-371,0|127,-71,0|225,113,0|114,280,0|-263,406,0|-284,641,0|-8,751,0" />
+</stagePackagePositions>
