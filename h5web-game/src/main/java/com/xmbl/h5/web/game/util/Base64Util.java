@@ -1,8 +1,8 @@
 package com.xmbl.h5.web.game.util;
 
-import sun.misc.BASE64Decoder;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Base64;
 
 /**
  * Copyright © 2018 noseparte © BeiJing BoLuo Network Technology Co. Ltd.
@@ -40,16 +40,16 @@ public class Base64Util {
     public static String decode(String s) {
         if (s == null)
             return null;
-        BASE64Decoder decoder = new BASE64Decoder();
+        Base64.Decoder decoder = Base64.getDecoder();
         try {
-            byte[] b = decoder.decodeBuffer(s);
-            return new String(b,"UTF-8");
+            byte[] b = decoder.decode(s);
+            return new String(b, "UTF-8");
         } catch (Exception e) {
             return null;
         }
     }
+
     /**
-     *
      * @return void
      * @author lifq
      * @date 2015-3-4 上午09:23:17
