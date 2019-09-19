@@ -24,7 +24,7 @@ public class Base64Util {
             return null;
         String res = "";
         try {
-            res = new sun.misc.BASE64Encoder().encode(s.getBytes("GBK"));
+            res = new String(Base64.getEncoder().encode(s.getBytes("GBK")));
         } catch (UnsupportedEncodingException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
